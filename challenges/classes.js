@@ -7,7 +7,7 @@ class CuboidMakerClass {
     }
     
     volume() {return this.length * this.width * this.height};
-    surfaceArea() {return this.length * this.width * this.height};
+    surfaceArea() {return 2 * (this.length * this.width + this.length * this.height + this.width * this.height)};
     }
 
     const cuboid2 = new CuboidMakerClass({
