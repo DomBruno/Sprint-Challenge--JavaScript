@@ -15,9 +15,9 @@ function consume(param1, param2, cb) {
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
-let add = (param1, param2) => param1 + param2;
-let multiply = (param1, param2) => param1 * param2;
-let greeting = (param1, param2) => {return "Hello " + param1 + " " + param2 + ", " + "nice to meet you!"}
+let add = (param1, param2) => console.log(param1 + param2);
+let multiply = (param1, param2) => console.log(param1 * param2);
+let greeting = (param1, param2) => {console.log("Hello " + param1 + " " + param2 + ", " + "nice to meet you!")}
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 consume(2,2,add); // 4
@@ -30,7 +30,7 @@ consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
 // Explanation: 
-console.log("nestedFunction has access to internal by being within the scope of myFunction where interna; is declared")
+console.log("nestedFunction has access to internagitl by being within the scope of myFunction where interna; is declared")
 
 const external = "I'm outside the function";
 
