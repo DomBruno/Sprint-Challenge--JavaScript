@@ -86,9 +86,8 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 /* Request 1: Create a new array called universities that contains all the universities in the graduates array.  
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
-let universities = graduates.map((university) => {return university.graduates;});
-universities.sort();
-console.log(universities)
+let universities = graduates.map((plink) => {return plink.university;});
+console.log(universities.sort())
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 

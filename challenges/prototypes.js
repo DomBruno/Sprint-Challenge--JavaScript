@@ -8,7 +8,7 @@
 function CuboidMaker(attribs) {
   this.length = attribs.length,
   this.width = attribs.width,
-  this.length = attribs.length;
+  this.height = attribs.height;
 
   
   
@@ -19,8 +19,7 @@ function CuboidMaker(attribs) {
   Formula for cuboid volume: length * width * height
 */
 
-this.volume = function() {
-  return this.length * this.width * this.height};
+this.volume = function() {return this.length * this.width * this.height;}
 
 
 
@@ -30,7 +29,7 @@ this.volume = function() {
   Formula for cuboid surface area of a cube: 2 * (length * width + length * height + width * height)
 */
 
-this.surfaceArea = function() {return (this.length * this.width) + (this.length * this.height) + (this.width * this.height)};
+this.surfaceArea = function() {return 2 * (this.length * this.width + this.length * this.height + this.width * this.height)};
 };
 
 /* == Step 4: Create a new object that uses CuboidMaker ==
